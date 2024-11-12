@@ -1,0 +1,12 @@
+.custom-button {
+  color: #971010; /* Cambia este color */
+  background-color: #2f363e; /* Prueba con un color diferente al del AppBar */
+  padding: 8px 16px;
+  text-transform: uppercase;
+  z-index: 80;
+  border: 1px solid #ffffff; 
+}
+
+.custom-button:hover {
+  background-color: #1c2835; /* Cambia a un tono más oscuro */
+}

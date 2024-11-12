@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #384839;
+    color: white;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  h2, h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .stats-title { 
+    transition: color 0.3s ease;
+  }
+
+  .stats-title:hover { 
+    color: rgb(244, 15, 19);
+  }
+
+footer {
+    background-color: #659f4e;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  }
+  
+  body {
+    margin-bottom: 80px; /* Asegúrate de que haya espacio suficiente para el footer */
+  }
+  
+
+  

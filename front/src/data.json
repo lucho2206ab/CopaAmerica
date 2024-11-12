@@ -1,0 +1,119 @@
+{
+    "sportsResults": [
+      {
+        "title": "Argentina vs Colombia - Final de la Copa América",
+        "link": "https://www.conmebol.com/noticias/argentina-es-bicampeon-de-la-conmebol-copa-america/",
+        "snippet": "Argentina se enfrentó a Colombia en una emocionante final y ganó con un gol en el tiempo extra."
+      },
+      {
+        "title": "Uruguay vs Brasil - Semifinal",
+        "link": "https://www.unoentrerios.com.ar/ovacion/uruguay-elimino-penales-brasil-y-esta-semifinales-n10142133.html",
+        "snippet": "Uruguay y Brasil empataron 0-0 en la semifinal, y Uruguay ganó en penales 4-2."
+      },
+      {
+        "title": "Canadá vs Uruguay - Semifinal",
+        "link": "https://www.ole.com.ar/copa-america/canada-entrenamiento-semifinal-argentina_0_hZl9xXl3mS.html",
+        "snippet": "Canadá y Uruguay empataron 2-2 en la semifinal, y Canadá ganó en penales 3-4."
+      },
+      {
+        "title": "Argentina vs Canadá - Cuartos de Final",
+        "snippet": "Argentina venció a Canadá con un marcador de 2-0 en los cuartos de final.",
+        "link": "https://www.conmebol.com/noticias/argentina-es-bicampeon-de-la-conmebol-copa-america/"
+      },
+      {
+        "title": "Perú vs Chile - Grupo A",
+        "link": "https://example.com/peru-vs-chile",
+        "snippet": "Perú venció a Chile con un marcador de 2-0 en el Grupo A."
+      },
+      {
+        "title": "Ecuador vs Venezuela - Grupo B",
+        "link": "https://example.com/ecuador-vs-venezuela",
+        "snippet": "Venezuela venció a Ecuador con un marcador de 2-1 en el Grupo B."
+      },
+      {
+        "title": "México vs Jamaica - Grupo C",
+        "link": "https://example.com/mexico-vs-jamaica",
+        "snippet": "México venció a Jamaica con un marcador de 2-0 en el Grupo C."
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "Argentina se corona campeón de la Copa América 2024",
+        "link": "https://www.conmebol.com/noticias/argentina-es-bicampeon-de-la-conmebol-copa-america/",
+        "snippet": "Argentina se coronó campeón de la Copa América 2024 tras vencer a Colombia en la final con un gol en el tiempo extra."
+      },
+      {
+        "id": 2,
+        "title": "Uruguay y Brasil empatan en semifinal y se define por penales",
+        "link": "https://www.unoentrerios.com.ar/ovacion/uruguay-elimino-penales-brasil-y-esta-semifinales-n10142133.html",
+        "snippet": "Uruguay y Brasil empataron 0-0 en la semifinal y se definió por penales, con Uruguay avanzando."
+      },
+      {
+        "id": 3,
+        "title": "Canadá sorprende y llega a la final de la Copa América",
+        "link": "https://www.ole.com.ar/copa-america/canada-entrenamiento-semifinal-argentina_0_hZl9xXl3mS.html",
+        "snippet": "Canadá sorprendió a todos y llegó a la final de la Copa América tras vencer a Uruguay en penales."
+      }
+    ],
+    "upcomingMatches": [
+
+      {
+        "id": 1,
+        "team1": "Argentina",
+        "team1FlagCode": "ar",
+        "team2": "Colombia",
+        "team2FlagCode": "co",
+        "date": "2024-07-14"
+      },
+      {
+        "id": 2,
+        "team1": "Uruguay",
+        "team1FlagCode": "uy",
+        "team2": "Brasil",
+        "team2FlagCode": "br",
+        "date": "2024-07-10"
+      },
+      {
+        "id": 3,
+        "team1": "Canadá",
+        "team1FlagCode": "ca",
+        "team2": "Uruguay",
+        "team2FlagCode": "uy",
+        "date": "2024-07-13"
+      },
+      {
+        "id": 4,
+        "team1": "Argentina",
+        "team1FlagCode": "ar",
+        "team2": "Canadá",
+        "team2FlagCode": "ca",
+        "date": "2024-07-09"
+      },
+      {
+        "id": 5,
+        "team1": "Perú",
+        "team1FlagCode": "pe",
+        "team2": "Chile",
+        "team2FlagCode": "cl",
+        "date": "2024-06-25"
+      },
+      {
+        "id": 6,
+        "team1": "Ecuador",
+        "team1FlagCode": "ec",
+        "team2": "Venezuela",
+        "team2FlagCode": "ve",
+        "date": "2024-06-22"
+      },
+      {
+        "id": 7,
+        "team1": "México",
+        "team1FlagCode": "mx",
+        "team2": "Jamaica",
+        "team2FlagCode": "jm",
+        "date": "2024-06-20"
+      }
+    ]
+  }
+  

@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "flag-icons": "^7.2.3",
+    "mysql2": "^3.11.3",
+    "react-hook-form": "^7.53.0",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.96.1"
+  },
+  "scripts": {
+    "start": "react-scripts start --openssl-legacy-provider"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9"
+  }
+}
