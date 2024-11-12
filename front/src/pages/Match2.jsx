@@ -1,53 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import data from '../data.json';
 import { jugadoresUruguay } from '../jugadoresUruguay';
 import { jugadoresBrasil } from '../jugadoresBrasil';
 import '../componentes/estilos/Match2.css';
 
+// Ajustamos las posiciones para que coincidan con las del JSON
 const titularesUruguay = [
   { "POS": 1, "Nombre": "Fernando Muslera" },
-  { "POS": 2, "Nombre": "José María Giménez" },
+  { "POS": 4, "Nombre": "José María Giménez" }, // POS ajustada para coincidir
   { "POS": 3, "Nombre": "Diego Godín" },
-  { "POS": 4, "Nombre": "Ronald Araújo" },
-  { "POS": 5, "Nombre": "Matías Viña" },
+  { "POS": 17, "Nombre": "Matías Viña" }, // POS ajustada para coincidir
+  { "POS": 2, "Nombre": "Ronald Araújo" },
   { "POS": 6, "Nombre": "Rodrigo Bentancur" },
-  { "POS": 7, "Nombre": "Federico Valverde" },
-  { "POS": 8, "Nombre": "Nicolás De La Cruz" },
+  { "POS": 15, "Nombre": "Federico Valverde" }, // POS ajustada para coincidir
+  { "POS": 7, "Nombre": "Nicolás De La Cruz" },
   { "POS": 9, "Nombre": "Luis Suárez" },
   { "POS": 10, "Nombre": "Edinson Cavani" },
-  { "POS": 11, "Nombre": "Jonathan Rodríguez" }
+  { "POS": 19, "Nombre": "Jonathan Rodríguez" } // POS ajustada para coincidir
 ];
 
 const titularesBrasil = [
   { "POS": 1, "Nombre": "Alisson Becker" },
-  { "POS": 2, "Nombre": "Dani Alves" },
-  { "POS": 3, "Nombre": "Marquinhos" },
-  { "POS": 4, "Nombre": "Thiago Silva" },
-  { "POS": 5, "Nombre": "Casemiro" },
-  { "POS": 6, "Nombre": "Alex Sandro" },
+  { "POS": 2, "Nombre": "Danilo" },
+  { "POS": 3, "Nombre": "Thiago Silva" },
+  { "POS": 4, "Nombre": "Marquinhos" },
   { "POS": 7, "Nombre": "Lucas Paquetá" },
-  { "POS": 8, "Nombre": "Philippe Coutinho" },
+  { "POS": 8, "Nombre": "Fred" },
   { "POS": 9, "Nombre": "Gabriel Jesus" },
-  { "POS": 10, "Nombre": "Neymar Jr" },
-  { "POS": 11, "Nombre": "Richarlison" }
+  { "POS": 10, "Nombre": "Neymar" },
+  { "POS": 11, "Nombre": "Vinícius Júnior" },
+  { "POS": 12, "Nombre": "Éder Militão" }, // POS ajustada para coincidir
+  { "POS": 17, "Nombre": "Renan Lodi" }
 ];
-
 
 const Match2 = () => {
   const { matchId } = useParams();
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const navigate = useNavigate();
-  const match = data.upcomingMatches.find(m => m.id === parseInt(matchId));
+  const [match, setMatch] = useState(null);
+
+  useEffect(() => {
+    // Simulación de la carga de datos de un archivo JSON
+    const matches = [
+      {
+        id: '2',
+        team1: 'Uruguay',
+        team2: 'Brasil',
+        team1Players: jugadoresUruguay,
+        team2Players: jugadoresBrasil,
+      },
+      // Puedes agregar más partidos aquí
+    ];
+
+    const foundMatch = matches.find(m => m.id === matchId);
+    setMatch(foundMatch);
+  }, [matchId]);
 
   if (!match) {
     return <div>Partido no encontrado</div>;
   }
 
-  const team1Players = (jugadoresUruguay || []).filter(player =>
+  const team1Players = (match.team1Players || []).filter(player =>
     titularesUruguay.some(titular => titular.POS === player.POS)
   );
-  const team2Players = (jugadoresBrasil || []).filter(player =>
+  const team2Players = (match.team2Players || []).filter(player =>
     titularesBrasil.some(titular => titular.POS === player.POS)
   );
 
@@ -105,8 +121,10 @@ const Match2 = () => {
   );
 };
 
+// Function to set player positions on the field
 const getPlayerStyle = (pos, team) => {
   const positionsUruguay = {
+
     1: { top: '38%', left: '2.5%' }, 
     2: { top: '63%', left: '5%' },  
     3: { top: '50%', left: '5.5%' }, 

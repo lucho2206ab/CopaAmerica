@@ -34,7 +34,7 @@ const Home = () => {
             <Grid item xs={12} sm={6} md={4} key={match.id}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <span className={`fi fi-${match.team1FlagCode}`} style={{ fontSize: '2em', marginRight: '10px', marginLeft: '10px' }}></span>
-                <Link to={`/match/${match.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={match.id === '2' ? `/match2/${match.id}` : `/match/${match.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <MatchCard match={match} />
                 </Link>
                 <span className={`fi fi-${match.team2FlagCode}`} style={{ fontSize: '2em', marginRight: '10px', marginLeft: '10px' }}></span>
